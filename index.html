@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CBB-K REGISTRATION</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBB-K REGISTRATION</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>
-        Chorale Bon Berge Kibeho 
-         
-    </h1>
+  <div class="form-container">
+    <h2>Chorale Bon Berge Kigali</h2>
+
     <form>
-        <label for="name">FullName</label><br>
+      <label for="name">Full Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your Full Name"><br><br>
 
-        <input type="text" id="name" name="name" placeholder="Enter your FullName"><br><br>
+      <label for="email">Email</label><br>
+      <input type="text" id="email" name="email" placeholder="Enter your Email"><br><br>
 
-        <label for="email">Email</label><br>
-        <input type="text" id="email" name="email" placeholder="Enter your Email"><br><br>
+      <label for="location">Location</label><br>
+      <input type="text" id="location" name="location" placeholder="Enter your Location"><br><br>
 
-        <label for="location">Location</label><br>
+      <label>Gender</label><br>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label><br><br>
 
-        <input type="text" id="location" name="location" placeholder="Enter your location"><br><br>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
 
-        <label>Gender</label><br>
+      <p>SELECT YOUR FAMILY</p>
+      <input type="checkbox" name="familly" value="Les Archanges" onclick="onlyone(this)"> Les Archanges<br>
+      <input type="checkbox" name="familly" value="St.Thomas d'Acquin" onclick="onlyone(this)"> St.Thomas d'Acquin<br>
+      <input type="checkbox" name="familly" value="Archangel St.Michel" onclick="onlyone(this)"> Archangel St.Michel<br>
+      <input type="checkbox" name="familly" value="St.Rita - Etoile du Ciel" onclick="onlyone(this)"> St.Rita - Etoile du Ciel<br>
+      <input type="checkbox" name="familly" value="St.Dominique Xavier" onclick="onlyone(this)"> St.Dominique Xavier<br>
+      <input type="checkbox" name="familly" value="La lumière de l'espoir" onclick="onlyone(this)"> La lumière de l'espoir<br>
+      <input type="checkbox" name="familly" value="St. Kizito" onclick="onlyone(this)"> St. Kizito<br><br>
 
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br><br>
+      <label>Will You Go to Kibeho?</label><br>
+      <input type="radio" id="yes" name="boolean" value="Yes">
+      <label for="yes">Yes</label><br><br>
 
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label>
+      <input type="radio" id="no" name="boolean" value="No">
+      <label for="no">No</label><br><br>
 
+      <label for="comment">Leave a comment</label><br>
+      <textarea id="comment" name="comment" rows="5" cols="30" placeholder="Write your comment here..."></textarea><br><br>
 
-        <p> SELECT YOUR FAMILY</p>
-        
-            <input type="checkbox" name="familly" value="Les Archanges" onclick="onlyone(this)"> Les Archanges<br>
-            <input type="checkbox" name="familly" value="St.Thomas d'Acquin" onclick="onlyone(this)"> St.Thomas d'Acquin<br>
-            <input type="checkbox" name="familly" value="Archangel St.Michel" onclick="onlyone(this)"> Archangel St.Michel<br>
-            <input type="checkbox" name="familly" value="St.Rita - Etoile du Ciel" onclick="onlyone(this)"> St.Rita - Etoile du Ciel<br>
-            <input type="checkbox" name="familly" value="St.Dominique Xavier" onclick="onlyone(this)"> St.Dominique Xavier<br>
-            <input type="checkbox" name="familly" value="La lumière de l'espoir" onclick="onlyone(this)"> La lumière de l'espoir<br>
-            <input type="checkbox" name="familly" value="St. Kizito" onclick="onlyone(this)"> St. Kizito<br>
-
-            <label>Will You Go to Kibeho</label>
-             <input type="radio" id="yes" name="boolean" value="Yes">
-               <label for="yes">Yes</label><br><br>
-            <input type="radio" id="no" name="boolean" value="No">
-               <label for="no">No</label><br><br>
-
-            
-            <label for="comment">Leave a comment</label><br>
-            <textarea id="comment" name="comment"   rows="5" columns="12" placeholder="write your text here........"></textarea><br><br
-            
-        <button></button>
-        
-    </form> 
-
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
