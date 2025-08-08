@@ -17,12 +17,14 @@
                        <input type="text" id="email" name="email" placeholder="Enter your Email"><br><br>
                     <label for="location">Location</label><br>
                         <input type="text" id="location" name="location" placeholder="Enter your Location"><br><br>
-                    <label>Gender</label><br>
-                         <input type="radio" id="male" name="gender" value="Male">
-                     <label for="male">Male</label><br><br>
-    
-                     <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label><br><br>
+                    <p> 
+                        <label for="gender">Select Your Gender:</label>
+                        <select name="Gender" id="gender">
+                            <option value="">choose ...</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </p>
                   
                  <p>SELECT YOUR FAMILY</p>
                     <input type="checkbox" name="familly" value="Les Archanges" onclick="onlyone(this)"> Les Archanges<br>
@@ -33,12 +35,17 @@
                     <input type="checkbox" name="familly" value="La lumière de l'espoir" onclick="onlyone(this)"> La lumière de l'espoir<br>
                     <input type="checkbox" name="familly" value="St. Kizito" onclick="onlyone(this)"> St. Kizito<br><br>
 
-                 <label>Will You Go to Kibeho?</label><br>
-                     <input type="radio" id="yes" name="boolean" value="Yes">
-                <label for="yes">Yes</label><br><br>
+                    <p> 
+                        <label for="boolean">Will you go to Kibeho</label>
+                        <select name="boolean" id="boolean">
+                            <option value="">choose ...</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </p>
+                  
 
-                      <input type="radio" id="no" name="boolean" value="No">
-                  <label for="no">No</label><br><br>
+                 
 
                   <label for="comment">Leave a comment</label><br>
                 <textarea id="comment" name="comment" rows="5" cols="30" placeholder="Write your comment here..."></textarea><br><br>
@@ -50,6 +57,9 @@
              </form>
  
     </section>
+    <script src="main.js">
+
+    </script>
     
 </body>
 </html>

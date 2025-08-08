@@ -17,14 +17,14 @@ body {
 
 .title {
     text-align: center;
-    color: #ccbaba;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ddd2d2;
+    background-color: rgb(205, 227, 235);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ body {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #444;
+    color: black;
 }
 
 
@@ -65,8 +65,8 @@ body {
 
 
 .container button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(168, 196, 212);
+    color: black;
     padding: 12px 25px;
     border: none;
     border-radius: 10px;
@@ -76,5 +76,5 @@ body {
 }
 
 .container button:hover {
-    background-color: #3d8b40;
+    background-color: rgb(122, 130, 134);
 }
