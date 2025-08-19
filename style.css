@@ -68,7 +68,7 @@ body {
     background-color: rgb(168, 196, 212);
     color: black;
     padding: 12px 25px;
-    border: none;
+    border: 1px solid;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
